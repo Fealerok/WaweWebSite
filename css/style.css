@@ -12,10 +12,67 @@
     --time-animation-swipe: 0.25s;
 }
 
-main{
-    scroll-behavior: smooth;
+
+.menu__button{
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    background-image: url(../img/9042808_menu_icon.png);
+    background-size: cover;
 }
 
+.close__button{
+
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.close{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    background-image: url(../img/cross.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu__phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    z-index: 5;
+    background-color: rgb(61, 63, 74);
+}
+
+
+.menu__phone ul li{
+    margin-top: 50px;
+    
+}
+
+
+.menu__phone ul li a{
+    font-family: "Roboto400", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.show__menu__phone{
+    animation-name: show_menu_phone;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.hide__menu__phone{
+    animation-name: hide_menu_phone;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
 
 
 header{
@@ -51,6 +108,14 @@ header nav ul li a:hover{
 nav{
     width: 70%;
     margin: 0 auto;
+}
+
+.button__menu{
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+
 }
 
 .logo__img{
@@ -323,6 +388,7 @@ nav{
 .buttons__gallery ul{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .buttons__gallery ul li a{

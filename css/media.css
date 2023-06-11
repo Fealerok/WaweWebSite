@@ -1,0 +1,386 @@
+@media (max-width: 1400px) {
+    .description__block{
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .description__block .name__block{
+        margin: 0 auto;
+    }
+
+    .description__block__main{
+        justify-content: center;
+    }
+
+    .what__will__you__take__statistic{
+        justify-content: center;
+    }
+
+    .statistic__text{
+        margin-top: 50px;
+    }
+    .description__block img{
+        width: 70%;
+    }
+
+    .gallery__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nature{
+        width: 300px;
+        height: 200px;
+    }
+
+    .tourist{
+        width: 300px;
+        height: 200px;
+    }
+
+    .profi{
+        width: 300px;
+        height: 200px;
+    }
+
+    .examples__gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images__gallery{
+        justify-content: center;
+    }
+
+    .buttons__gallery{
+        width: 80%;
+    }
+
+    :root{
+        --text-small-font-size: 20px;
+    }
+
+    .text__carousel span:first-child{
+        font-size: 30px;
+    }
+    .text__carousel span:nth-child(2){
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .left__right__blocks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right__block{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .name__block span{
+        font-size: 35px;
+    }
+
+    :root{
+        --text-small-font-size: 17px;
+        --font-size-statistic: 75px;
+    }
+
+    .statistic__block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item__statistic{
+        margin-bottom: 100px;
+    }
+
+    .item__statistic span:nth-child(2){
+        font-size: 25px;
+    }
+
+
+    .form{
+        width: 400px;
+    }
+
+    .form__label{
+        font-size: 15px;
+    }
+
+    .welcome__name{
+        font-size: 150px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .name__block span{
+        font-size: 27px;
+    }
+
+    :root{
+        --font-size-slash: 30px;
+    }
+
+    .about__school__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text__carousel span:first-child{
+        font-size: 20px;
+    }
+    .text__carousel span:nth-child(2){
+        font-size: 10px;
+    }
+
+    .buttons__gallery ul li a{
+        font-size: 15px;
+    }
+
+    :root{
+        --font-size-statistic: 50px;
+    }
+
+    .item__statistic span:nth-child(2){
+        font-size: 20px;
+    }
+
+    .name__block__item span{
+        font-size: 20px;
+    }
+
+    .about__school__text .left__text{
+        margin-top: 50px;
+    }
+
+    .what__will__you__take__main .name__block{
+        margin-top: 0px;
+    }
+
+    .examples__gallery{
+        margin-top: 50px;
+    }
+
+    .quote__block{
+        margin-top: 200px;
+    }
+
+    .video__block{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    .main__quote{
+        font-size: 15px;
+    }
+
+    .author{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .name__block span{
+        font-size: 20px;
+    }
+
+    :root{
+        --font-size-slash: 20px;
+    }
+
+    .triangle{
+        border-top: 25px solid transparent;
+        border-left: 50px solid #373A39;
+        border-bottom: 25px  solid transparent;
+    }
+
+    .item__our__team img{
+        width: 80%;
+    }
+
+    .control__buttons input{
+        margin-right: 10px;
+        width: 5px;
+        height: 5px;
+    }
+    
+    .form{
+        width: 300px;
+    }
+
+    .statistic__block{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome__name{
+        font-size: 100px;
+    }
+
+    .welcome__name_description{
+        font-size: 15px;
+    }
+
+    .gallery__block button {
+        border: 1px solid #9f9f9f;
+        width: 200px;
+        height: 50px;
+        font-size: var(--text-medium-font-size);
+        font-family: "Roboto400", sans-serif;
+        margin-top: 70px;
+        transition: 0.2s;
+    }
+
+    :root{
+        --text-small-font-size: 12px;
+    }
+
+    .form__label{
+        transition: .1s;
+        font-size: 10px;
+    }
+
+    .menu__phone ul li a{
+        font-family: "Roboto400", sans-serif;
+        font-size: 20px;
+        color: white;
+    }
+
+    .blog__block .name__block{
+        margin-top: 100px;
+    }
+
+    .carousel__block{
+        margin-top: 50px;
+    }
+
+    .items__team{
+        margin-top: 0px;
+    }
+
+    .services__block{
+        margin-top: 50px;
+    }
+
+    .services__items__block{
+        margin-top: 50px;
+    }
+
+    .map__block{
+        margin-top: 200px;
+    }
+
+    .request__block{
+        margin-top: 50px;
+    }
+
+    .left__right__blocks{
+        margin-top: 80px;
+    }
+
+    .social__websites__block{
+        margin-top: 100px;
+    }
+
+    .gallery__block button{
+        width: 200px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .name__block span{
+        font-size: 15px;
+    }
+
+    .welcome__name{
+        font-size: 70px;
+    }
+
+    .welcome__name_description{
+        font-size: 15px;
+    }
+
+    .request__submit__button {
+        font-size: 20px;
+        padding: 10px 50px;
+
+    }
+
+    .right__block span{
+        font-size: 15px;
+    }
+
+    .menu__phone ul li a{
+        font-family: "Roboto400", sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+
+    .close{
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu__button{
+        width: 60px;
+        height: 60px;
+    }
+
+    :root{
+        --font-size-slash: 10px;
+    }
+
+    .nature{
+        width: 150px;
+        height: 100px;
+    }
+
+    .tourist{
+        width: 150px;
+        height: 100px;
+    }
+
+    .profi{
+        width: 150px;
+        height: 100px;
+    }
+
+    .wawe__text img{
+        width: 80%;
+    }
+
+    .text__carousel span:first-child{
+        font-size: 10px;
+    }
+
+    .text__carousel span:nth-child(2){
+        font-size: 5px;
+    }
+
+    .buttons__gallery ul li a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .name__block span{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 365px) {
+    .form {
+        width: 200px;
+    }
+}

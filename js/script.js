@@ -3,8 +3,47 @@ let buttonShowMore = document.querySelector(".show");
 let video_img = document.querySelector(".concrete__video__img")
 let video_triangle = document.querySelector(".triangle");
 let carousel__block = document.querySelector(".carousel__block")
-
+let burger_button = document.querySelector(".menu__button");
+let menu__phone = document.querySelector(".menu__phone");
 let id_radioButton_prev = 0;
+let close_button = document.querySelector(".close");
+
+if (window.innerWidth <= 1000){
+    burger_button.classList.remove("none");
+    document.querySelector(".menu__ul").classList.add("none");
+}
+else{
+    burger_button.classList.add("none");
+    document.querySelector(".menu__ul").classList.remove("none");
+}
+window.onresize = function(){
+    if (window.innerWidth <= 1000){
+        burger_button.classList.remove("none");
+        document.querySelector(".menu__ul").classList.add("none");
+    }
+    else{
+        burger_button.classList.add("none");
+        document.querySelector(".menu__ul").classList.remove("none");
+    }
+
+}
+
+close_button.addEventListener("click", function(){
+    menu__phone.classList.remove("show__menu__phone");
+    menu__phone.classList.add("hide__menu__phone");
+    setTimeout(200, function(){
+        menu__phone.classList.add("none");
+    })
+    
+    
+})
+
+
+burger_button.addEventListener("click", function(){
+    menu__phone.classList.remove("hide__menu__phone");
+    menu__phone.classList.remove("none");
+    menu__phone.classList.add("show__menu__phone");
+})
 //Code of showing more photos in block ImagesGallery
 buttonShowMore.addEventListener("click", function(event){
     let time = 100;
@@ -123,11 +162,11 @@ function ChangeItem(element){
     }
 
     //Условие для свайпа направо
-    if (element.id > id_radioButton_prev){
+    if (Number(element.id) > Number(id_radioButton_prev)){
        SwipeToRight(element, active_item, time)
     } 
     //Условие для свайпа налево
-    else if (element.id < id_radioButton_prev){
+    else if (Number(element.id) < Number(id_radioButton_prev)){
         SwipeToLeft(element, active_item, time)
     }
 

@@ -21,3 +21,24 @@
         transform: translateX(0%);
     }
 }
+
+@keyframes show_menu_phone {
+    from{
+        left: 100%;
+        
+    }
+
+    to{
+        left: 70%;
+    }
+}
+
+@keyframes hide_menu_phone {
+    from{
+        left: 70%;
+    }
+
+    to{
+        left: 100%;
+    }
+}
