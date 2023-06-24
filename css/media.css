@@ -219,6 +219,9 @@
     .statistic__block{
         margin-top: 100px;
     }
+    :root{
+        --block-width: 100%;
+    }
 }
 
 @media (max-width: 600px) {

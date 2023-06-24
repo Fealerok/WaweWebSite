@@ -52,7 +52,6 @@
 
 .menu__phone ul li{
     margin-top: 50px;
-    
 }
 
 
@@ -66,12 +65,14 @@
     animation-name: show_menu_phone;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
+    box-shadow: 0px 0px 300px 10px rgb(0, 0, 0);
 }
 
 .hide__menu__phone{
     animation-name: hide_menu_phone;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
+    box-shadow: none;
 }
 
 
@@ -584,6 +585,7 @@ nav{
     position: absolute;
     top: 90%;
     left: 43%;
+    z-index: 100;
 }
 
 .control__buttons input{
@@ -598,6 +600,45 @@ nav{
 
 .none__carousel__item{
     display: none;
+}
+
+.control__buttons__left__right{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.butt{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.slide__button{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 5%;
+    height: 100%;
+    z-index: 0;
+    background-color: #373A39;
+    font-family: "Roboto400", sans-serif;
+    color: white;
+    font-size: var(--text-small-font-size);
+}
+
+.right__slide__button{
+    position: absolute;
+    left: 95%;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+.left__slide__button{
+    position: absolute;
+    left: 0%;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
 }
 
 .change__item__left{
