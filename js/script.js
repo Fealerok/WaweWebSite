@@ -7,6 +7,7 @@ let burger_button = document.querySelector(".menu__button");
 let menu__phone = document.querySelector(".menu__phone");
 let id_radioButton_prev = 0;
 let close_button = document.querySelector(".close");
+let slash = document.querySelectorAll(".slash__block");
 
 function ScrollToElement(link_element){
     menu__phone.classList.remove("show__menu__phone");
@@ -43,6 +44,17 @@ else{
     document.querySelector(".control__buttons").classList.remove("none__carousel__item");
 }
 
+if (window.innerWidth <= 500){
+    slash.forEach(element => {
+        element.classList.add("none");
+    });
+}
+else{
+    slash.forEach(element => {
+        element.classList.remove("none");
+    });
+}
+
 //Событие на изменение экрана для того, что бы вовремя отключить отображение
 //меню-кнопок и сделать отображение бургер-кнопки
 window.onresize = function(){
@@ -57,6 +69,17 @@ window.onresize = function(){
         document.querySelector(".menu__ul").classList.remove("none");
         document.querySelector(".control__buttons__left__right").classList.add("none");
         document.querySelector(".control__buttons").classList.remove("none__carousel__item");
+    }
+
+    if (window.innerWidth <= 500){
+        slash.forEach(element => {
+            element.classList.add("none");
+        });
+    }
+    else{
+        slash.forEach(element => {
+            element.classList.remove("none");
+        });
     }
 }
 

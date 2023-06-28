@@ -298,12 +298,12 @@
         width: 200px;
         height: 35px;
     }
+
+    
 }
 
 @media (max-width: 500px) {
-    .name__block span{
-        font-size: 15px;
-    }
+    
 
     .welcome__name{
         font-size: 70px;
@@ -376,10 +376,46 @@
 }
 
 @media (max-width: 400px) {
-    .name__block span{
-        font-size: 10px;
+    .description__block{
+        width: 100%;
+    }
+    
+
+    .description__block img{
+        width: 90%;
     }
 
+    .concrete__video img{
+        width: 100%;
+    }
+
+    .gallery__block .show{
+        width: 90%;
+        height: 50px;
+    }
+
+    .left__block{
+        width: 100%;
+    }
+
+    .left__block button{
+        width: 90%;
+        height: 50px;
+    }
+
+    .form__block .form{
+        width: 100%;
+    }
+
+    .social__websites__block{
+        justify-content: center;
+    }
+
+    :root{
+        --text-medium-font-size: 20px;
+    }
+
+    
 }
 
 @media (max-width: 365px) {

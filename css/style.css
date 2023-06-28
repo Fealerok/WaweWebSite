@@ -189,6 +189,7 @@ nav{
     font-family: "Raleway600", sans-serif;
     font-size: 48px;
     color: #01353E;
+    text-align: center;
 }
 
 .name__block{
@@ -478,6 +479,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .concrete__video img{
@@ -540,6 +542,7 @@ nav{
     position: relative;
     margin-top: 250px;
     width: 100%;
+    height: 30%;
 }
 
 
@@ -547,6 +550,7 @@ nav{
 .carousel__bg img{
     filter: brightness(0.7);
     width: 100%;
+    height: 100%;
 }
 
 .item__carousel{
